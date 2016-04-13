@@ -13,6 +13,7 @@ var audio8 = new Audio('audio/wee.mp3');
 var audio9 = new Audio('audio/downer.mp3');
 
 document.getElementById("play").addEventListener("click", function(){
+	audio.loop = true;
 	audio.play();
 });
 document.getElementById("stop").addEventListener("click", function(){
@@ -21,6 +22,7 @@ document.getElementById("stop").addEventListener("click", function(){
 });
 
 document.getElementById("play1").addEventListener("click", function(){
+	audio1.loop = true;
 	audio1.play();
 });
 document.getElementById("stop1").addEventListener("click", function(){
@@ -29,6 +31,7 @@ document.getElementById("stop1").addEventListener("click", function(){
 });
 
 document.getElementById("play2").addEventListener("click", function(){
+	audio2.loop = true;
 	audio2.play();
 });
 document.getElementById("stop2").addEventListener("click", function(){
@@ -37,10 +40,70 @@ document.getElementById("stop2").addEventListener("click", function(){
 });
 
 document.getElementById("play3").addEventListener("click", function(){
+	audio3.loop = true;
 	audio3.play();
 });
 document.getElementById("stop3").addEventListener("click", function(){
 	audio3.pause();
   
 });
+
+document.getElementById("play4").addEventListener("click", function(){
+	audio4.loop = true;
+	audio4.play();
 });
+document.getElementById("stop4").addEventListener("click", function(){
+	audio4.pause();
+});
+
+document.getElementById("play5").addEventListener("click", function(){
+	audio5.loop = true;
+	audio5.play();
+});
+document.getElementById("stop5").addEventListener("click", function(){
+	audio5.pause();
+  
+});
+
+document.getElementById("play6").addEventListener("click", function(){
+	audio6.loop = true;
+	audio6.play();
+});
+document.getElementById("stop6").addEventListener("click", function(){
+	audio6.pause();
+  
+});
+
+document.getElementById("play7").addEventListener("click", function(){
+	audio7.loop = true;
+	audio7.play();
+});
+document.getElementById("stop7").addEventListener("click", function(){
+	audio7.pause();
+  
+});
+
+document.getElementById("play8").addEventListener("click", function(){
+	audio8.loop = true;
+	audio8.play();
+});
+document.getElementById("stop8").addEventListener("click", function(){
+	audio8.pause();
+  
+});
+
+document.getElementById("play9").addEventListener("click", function(){
+	audio9.loop = true;
+	audio9.play();
+});
+document.getElementById("stop9").addEventListener("click", function(){
+	audio9.pause();
+  
+});
+
+
+});
+
+
+// sounds object-instrument...array of sounds 
+
