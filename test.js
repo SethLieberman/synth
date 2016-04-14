@@ -1,156 +1,159 @@
 $( document ).ready(function() {
 
-var audio1 = new Audio('audio/808.mp3');
-var audio2 = new Audio('audio/beatnick.mp3');
-var audio3 = new Audio('audio/blast.mp3');
-var audio4 = new Audio('audio/synth.mp3')
-var audio5 = new Audio('audio/atnight.mp3');
-var audio6 = new Audio('audio/fun.mp3');
-var audio7 = new Audio('audio/resurrection.mp3');
-var audio8 = new Audio('audio/vizor.mp3');
-var audio9 = new Audio('audio/wee.mp3');
-var audio10 = new Audio('audio/downer.mp3');
-var audio11 = new Audio('audio/cb.mp3');
-var audio12 = new Audio('audio/ch.mp3');
-var audio13 = new Audio('audio/cl.mp3');
-var audio14 = new Audio('audio/cp.mp3');
-var audio15 = new Audio('audio/ma.mp3');
+var audio = {
+	beat1:new Audio('audio/808.mp3'),
+	beat2:new Audio('audio/beatnick.mp3'),
+	beat3:new Audio('audio/blast.mp3'),
+	beat4:new Audio('audio/synth.mp3'),
+	beat5:new Audio('audio/atnight.mp3'),
+	beat6:new Audio('audio/fun.mp3'),
+	beat7:new Audio('audio/resurrection.mp3'),
+	beat8:new Audio('audio/vizor.mp3'),
+	beat9:new Audio('audio/wee.mp3'),
+	beat10:new Audio('audio/downer.mp3'),
+	beat11:new Audio('audio/cb.mp3'),
+	beat12:new Audio('audio/ch.mp3'),
+	beat13:new Audio('audio/cl.mp3'),
+	beat14:new Audio('audio/cp.mp3'),
+	beat15:new Audio('audio/ma.mp3')
+}
 
 
-document.getElementById("stop").addEventListener("click", function(){
-	audio.currentTime = 0;
+$("#stop").click(function () {
+    audio.pause();
+    audio.currentTime = 0;
 });
 
 
 document.getElementById("play1").addEventListener("click", function(){
-	audio1.loop = true;
-	audio1.play();
+	audio.beat1.loop = true;
+	audio.beat1.play();
 });
 document.getElementById("pause1").addEventListener("click", function(){
-	audio1.pause();
+	audio.beat1.pause();
   
 });
 
 document.getElementById("play2").addEventListener("click", function(){
-	audio2.loop = true;
-	audio2.play();
+	audio.beat2.loop = true;
+	audio.beat2.play();
 });
 document.getElementById("pause2").addEventListener("click", function(){
-	audio2.pause();
+	audio.beat2.pause();
   
 });
 
 document.getElementById("play3").addEventListener("click", function(){
-	audio3.loop = true;
-	audio3.play();
+	audio.beat3.loop = true;
+	audio.beat3.play();
 });
 document.getElementById("pause3").addEventListener("click", function(){
-	audio3.pause();
+	audio.beat3.pause();
   
 });
 
 document.getElementById("play4").addEventListener("click", function(){
-	audio4.loop = true;
-	audio4.play();
+	audio.beat4.loop = true;
+	audio.beat4.play();
 });
 document.getElementById("pause4").addEventListener("click", function(){
-	audio4.pause();
+	audio.beat4.pause();
   
 });
 
 document.getElementById("play5").addEventListener("click", function(){
-	audio5.loop = true;
-	audio5.play();
+	audio.beat5.loop = true;
+	audio.beat5.play();
 });
 document.getElementById("pause5").addEventListener("click", function(){
-	audio5.pause();
+	audio.beat5.pause();
 });
 
 document.getElementById("play6").addEventListener("click", function(){
-	audio6.loop = true;
-	audio6.play();
+	audio.beat6.loop = true;
+	audio.beat6.play();
 });
 document.getElementById("pause6").addEventListener("click", function(){
-	audio6.pause();
+	audio.beat6.pause();
   
 });
 
 document.getElementById("play7").addEventListener("click", function(){
-	audio7.loop = true;
-	audio7.play();
+	audio.beat7.loop = true;
+	audio.beat7.play();
 });
 document.getElementById("pause7").addEventListener("click", function(){
-	audio7.pause();
+	audio.beat7.pause();
   
 });
 
 document.getElementById("play8").addEventListener("click", function(){
-	audio8.loop = true;
-	audio8.play();
+	audio.beat8.loop = true;
+	audio.beat8.play();
 });
 document.getElementById("pause8").addEventListener("click", function(){
-	audio8.pause();
+	audio.beat8.pause();
   
 });
 
 document.getElementById("play9").addEventListener("click", function(){
-	audio9.loop = true;
-	audio9.play();
+	audio.beat9.loop = true;
+	audio.beat9.play();
 });
 document.getElementById("pause9").addEventListener("click", function(){
-	audio9.pause();
+	audio.beat9.pause();
   
 });
 
 document.getElementById("play10").addEventListener("click", function(){
-	audio10.loop = true;
-	audio10.play();
+	audio.beat10.loop = true;
+	audio.beat10.play();
 });
 document.getElementById("pause10").addEventListener("click", function(){
-	audio10.pause();
+	audio.beat10.pause();
   
 });
 document.getElementById("play11").addEventListener("click", function(){
-	audio11.loop = true;
-	audio11.play();
+	audio.beat11.loop = true;
+	audio.beat11.play();
 });
 document.getElementById("pause11").addEventListener("click", function(){
-	audio11.pause();
+	audio.beat11.pause();
   
 });
 document.getElementById("play12").addEventListener("click", function(){
-	audio12.loop = true;
-	audio12.play();
+	audio.beat12.loop = true;
+	audio.beat12.play();
 });
 document.getElementById("pause12").addEventListener("click", function(){
-	audio12.pause();
+	audio.beat12.pause();
   
 });
 
 document.getElementById("play13").addEventListener("click", function(){
-	audio13.loop = true;
-	audio13.play();
+	audio.beat13.loop = true;
+	audio.beat13.play();
 });
 document.getElementById("pause13").addEventListener("click", function(){
-	audio13.pause();
+	audio.beat13.pause();
   
 });
 
 document.getElementById("play14").addEventListener("click", function(){
-	audio14.loop = true;
-	audio14.play();
+	audio.beat14.loop = true;
+	audio.beat14.play();
 });
 document.getElementById("pause14").addEventListener("click", function(){
-	audio14.pause();
+	audio.beat14.pause();
   
 });
 
 document.getElementById("play15").addEventListener("click", function(){
-	audio15.loop = true;
-	audio15.play();
+	audio.beat15.loop = true;
+	audio.beat15.play();
 });
 document.getElementById("pause15").addEventListener("click", function(){
-	audio15.pause();
+	audio.beat15.pause();
   
 });
 

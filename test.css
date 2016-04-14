@@ -1,5 +1,6 @@
 body{
-background-color: rgba(0, 50, 50, 0.3);
+
+animation:colorPulse 10s alternate infinite;
 }
 
 button{
@@ -17,91 +18,91 @@ button{
 }
 
 .c1{
-	animation:move-left-right1 2s ease-in-out .5s both alternate infinite;;
+	animation:move-left-right1 2s ease-in-out .5s both alternate infinite;
 	background-color:blue;
 }
 
 .c2{
-	animation:move-left-right 2s ease-in-out 1s both alternate infinite;;
+	animation:move-left-right 2s ease-in-out 1s both alternate infinite;
 	background-color:red;
 }
 
 .c3{
-	animation:move-left-right1 4s ease-in-out 1.5s both alternate infinite;;
+	animation:move-left-right1 4s ease-in-out 1.5s both alternate infinite;
 	background-color:green;
 }
 .c4{
-	animation:move-left-right 2s ease-in-out 2s both alternate infinite;;
+	animation:move-left-right 2s ease-in-out 2s both alternate infinite;
 	background-color:#5b2971;
 }
 
 .c5{
-	animation:move-left-right1 7s ease-in-out 2.5s both alternate infinite;;
+	animation:move-left-right1 7s ease-in-out 2.5s both alternate infinite;
 	background-color:#ffb9b9;
 
 }
 
 .c6{
-	animation:move-left-right 2s ease-in-out 3s both reverse infinite;;
+	animation:move-left-right 2s ease-in-out 3s both reverse infinite;
 	background-color:#ff7400;
 }
 
 .c7{
-	animation:move-left-right1 3s ease-in-out 3.5s both alternate-reverse infinite;;
+	animation:move-left-right1 3s ease-in-out 3.5s both alternate-reverse infinite;
 	background-color:#05abf3;
 }
 
 .c8{
-	animation:move-left-right 2s ease-in-out 4s both alternate-reverse infinite;;
+	animation:move-left-right 2s ease-in-out 4s both alternate-reverse infinite;
 	background-color:#00f81e;
 }
 
 .c9{
-	animation:move-left-right1 4s ease-in-out 4.5s both alternate-reverse infinite;;
+	animation:move-left-right1 4s ease-in-out 4.5s both alternate-reverse infinite;
 	background-color:#efff00;
 }
 .c10{
-	animation:move-left-right 1s ease-in-out 5s both reverse infinite;;
+	animation:move-left-right 1s ease-in-out 5s both reverse infinite;
 	background-color:#f8009c;
 }
 
 .c11{
-	animation:move-left-right1 7s ease-in-out 5.5s both reverse infinite;;
+	animation:move-left-right1 7s ease-in-out 5.5s both reverse infinite;
 	background-color:#ff0700;
 }
 
 .c12{
-	animation:move-left-right 2s ease-in-out 6s both reverse infinite;;
+	animation:move-left-right 2s ease-in-out 6s both reverse infinite;
 	background-color:#0b52f4;
 }
 
 .c13{
-	animation:move-left-right2 4s ease-in-out 6s both alternate infinite;;
+	animation:move-left-right2 4s ease-in-out 6s both alternate infinite;
 	background-color:#0b52f4;
 }
 
 .c14{
-	animation:move-left-right2 3s ease-in-out 5s both alternate infinite;;
+	animation:move-left-right2 3s ease-in-out 5s both alternate infinite;
 	background-color:#0b52f4;
 }
 
 .c15{
-	animation:move-left-right2 2s ease-in-out 4s both reverse infinite;;
+	animation:move-left-right2 2s ease-in-out 4s both reverse infinite;
 	background-color:#0b52f4;
 }
 
 .c16{
-	animation:move-left-right2 1s ease-in-out 3s both alternate infinite;;
+	animation:move-left-right2 1s ease-in-out 3s both alternate infinite;
 	background-color:#0b52f4;
 }
 
 .c17{
-	animation:move-left-right2 2.5s ease-in-out 2s both reverse infinite;;
+	animation:move-left-right2 2.5s ease-in-out 2s both reverse infinite;
 	background-color:#0b52f4;
 }
 
 .c18{
-	animation:move-left-right2 3s ease-in-out 1s both reverse infinite;;
+	animation:move-left-right2 3s ease-in-out 1s both reverse infinite;
 	background-color:#0b52f4;
 }
 
@@ -124,4 +125,11 @@ button{
 	50% {transform: translateX(400px) translateY(250px);}
 	75% {transform: translateX(900px) translateY(50px);}
 	100% {transform: translateX(600px) translateY(500px);}
+}
+
+
+@keyframes colorPulse {
+      0% {background-color: red;}
+     50% {background-color: white;}
+    100% {background-color: blue;}
 }
