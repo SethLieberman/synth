@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 
-
 var audio1 = new Audio('audio/808.mp3');
 var audio2 = new Audio('audio/beatnick.mp3');
 var audio3 = new Audio('audio/blast.mp3');
@@ -18,10 +17,6 @@ var audio14 = new Audio('audio/cp.mp3');
 var audio15 = new Audio('audio/ma.mp3');
 
 
-// function pause(){
-// 	document.getElementById("stop").addEventListener("click", function(){
-// 	audio.pause();
-// });
 document.getElementById("stop").addEventListener("click", function(){
 	audio.currentTime = 0;
 });

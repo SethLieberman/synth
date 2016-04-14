@@ -1,3 +1,89 @@
 body{
 background-color: rgba(0, 50, 50, 0.3);
 }
+
+button{
+	
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin-bottom: 10px;
+	display: inline-block;
+	z-index: -1;
+	position: absolute;
+}
+
+.c1{
+	animation:move-left-right1 1s ease-in-out .5s both alternate infinite;;
+	background-color:blue;
+}
+
+.c2{
+	animation:move-left-right 2s ease-in-out 1s both alternate infinite;;
+	background-color:red;
+}
+
+.c3{
+	animation:move-left-right1 4s ease-in-out 1.5s both alternate infinite;;
+	background-color:green;
+}
+.c4{
+	animation:move-left-right 1s ease-in-out 2s both alternate infinite;;
+	background-color:#5b2971;
+}
+
+.c5{
+	animation:move-left-right1 7s ease-in-out 2.5s both alternate infinite;;
+	background-color:#ffb9b9;
+}
+
+.c6{
+	animation:move-left-right 2s ease-in-out 3s both reverse infinite;;
+	background-color:#ff7400;
+}
+
+.c7{
+	animation:move-left-right1 3s ease-in-out 3.5s both alternate-reverse infinite;;
+	background-color:#05abf3;
+}
+
+.c8{
+	animation:move-left-right 2s ease-in-out 4s both alternate-reverse infinite;;
+	background-color:#00f81e;
+}
+
+.c9{
+	animation:move-left-right1 4s ease-in-out 4.5s both alternate-reverse infinite;;
+	background-color:#efff00;
+}
+.c10{
+	animation:move-left-right 1s ease-in-out 5s both reverse infinite;;
+	background-color:#f8009c;
+}
+
+.c11{
+	animation:move-left-right1 7s ease-in-out 5.5s both reverse infinite;;
+	background-color:#ff0700;
+}
+
+.c12{
+	animation:move-left-right 2s ease-in-out 6s both reverse infinite;;
+	background-color:#0b52f4;
+}
+
+@keyframes move-left-right{
+	0% {transform: translateX(0px) translateY(0px);}
+	50% {transform: translateX(200px) translateY(300px);}
+	75% {transform: translateX(400px) translateY(-50px);}
+	100% {transform: translateX(1200px) translateY(700px);}
+}
+
+@keyframes move-left-right1{
+	0% {transform: translateX(900px) translateY(0px);}
+	50% {transform: translateX(300px) translateY(200px);}
+	75% {transform: translateX(600px) translateY(150px);}
+	100% {transform: translateX(1200px) translateY(500px);}
+}
