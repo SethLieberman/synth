@@ -11,6 +11,18 @@ var audio6 = new Audio('audio/resurrection.mp3');
 var audio7 = new Audio('audio/vizor.mp3');
 var audio8 = new Audio('audio/wee.mp3');
 var audio9 = new Audio('audio/downer.mp3');
+var audio9 = new Audio('audio/cb.mp3');
+var audio9 = new Audio('audio/ch.mp3');
+var audio9 = new Audio('audio/cl.mp3');
+var audio9 = new Audio('audio/cp.mp3');
+var audio9 = new Audio('audio/ma.mp3');
+
+
+// function pause(){
+// 	document.getElementById("stop").addEventListener("click", function(){
+// 	audio.pause();
+// });
+
 
 document.getElementById("play").addEventListener("click", function(){
 	audio.loop = true;
