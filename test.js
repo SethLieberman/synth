@@ -18,7 +18,6 @@ var audio = {
 	beat15:new Audio('audio/ma.mp3')
 }
 
-
 $("#stop").click(function () {
     audio.pause();
     audio.currentTime = 0;

@@ -1,10 +1,26 @@
 body{
-
 animation:colorPulse 10s alternate infinite;
 }
 
+.container{
+	text-align: center;
+	margin-top:75px;
+}
+
+.beatC{
+
+	margin: 0 auto;
+	width: 200px;
+	text-align: left;
+}
+
 button{
-	
+	font-size: 16px;
+	border-radius: 50px;
+	height: 30px;
+	opacity: .4;
+	font-weight: bold;
+	background-color: white;
 }
 
 .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12, .c13, .c14, .c15, .c16, .c17, .c18{
@@ -18,7 +34,7 @@ button{
 }
 
 .c1{
-	animation:move-left-right1 2s ease-in-out .5s both alternate infinite;
+	animation:move-left-right1 .5s ease-in-out .5s both alternate infinite;
 	background-color:blue;
 }
 
@@ -108,14 +124,14 @@ button{
 
 @keyframes move-left-right{
 	0% {transform: translateX(0px) translateY(0px);}
-	50% {transform: translateX(200px) translateY(300px);}
-	75% {transform: translateX(400px) translateY(-50px);}
+	50% {transform: translateX(200px) translateY(450px);}
+	75% {transform: translateX(800px) translateY(-50px);}
 	100% {transform: translateX(1200px) translateY(700px);}
 }
 
 @keyframes move-left-right1{
 	0% {transform: translateX(900px) translateY(0px);}
-	50% {transform: translateX(300px) translateY(200px);}
+	50% {transform: translateX(300px) translateY(300px);}
 	75% {transform: translateX(600px) translateY(150px);}
 	100% {transform: translateX(1200px) translateY(500px);}
 }
@@ -127,9 +143,8 @@ button{
 	100% {transform: translateX(600px) translateY(500px);}
 }
 
-
 @keyframes colorPulse {
-      0% {background-color: red;}
-     50% {background-color: white;}
-    100% {background-color: blue;}
+      0% {background-color: #e4dcff;}
+     50% {background-color: #3fb8a4;}
+    100% {background-color: #a82248;}
 }
