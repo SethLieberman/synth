@@ -1,5 +1,5 @@
 body{
-animation:colorPulse 10s alternate infinite;
+animation:changeColor 10s alternate infinite;
 }
 
 .container{
@@ -8,7 +8,6 @@ animation:colorPulse 10s alternate infinite;
 }
 
 .beatC{
-
 	margin: 0 auto;
 	width: 200px;
 	text-align: left;
@@ -21,6 +20,8 @@ button{
 	opacity: .4;
 	font-weight: bold;
 	background-color: white;
+	box-shadow: 2px 2px 2px 3px;
+	margin: 5px 5px 5px 5px;
 }
 
 .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12, .c13, .c14, .c15, .c16, .c17, .c18{
@@ -34,110 +35,99 @@ button{
 }
 
 .c1{
-	animation:move-left-right1 .5s ease-in-out .5s both alternate infinite;
-	background-color:blue;
+	
+	animation:move-left-right1 .5s ease-in-out .5s both alternate infinite, colorPulse 10s reverse infinite;
+	
 }
 
-.c2{
-	animation:move-left-right 2s ease-in-out 1s both alternate infinite;
-	background-color:red;
+.c2{	
+	animation:move-left-right 2s ease-in-out 1s both alternate infinite, colorPulse1 10s alternate infinite;
 }
 
 .c3{
-	animation:move-left-right1 4s ease-in-out 1.5s both alternate infinite;
-	background-color:green;
+	animation:move-left-right1 4s ease-in-out 1.5s both alternate infinite, colorPulse 10s alternate-reverse infinite;
 }
+
 .c4{
-	animation:move-left-right 2s ease-in-out 2s both alternate infinite;
-	background-color:#5b2971;
+	animation:move-left-right 2s ease-in-out 2s both alternate infinite, colorPulse1 10s reverse infinite;
 }
 
 .c5{
-	animation:move-left-right1 7s ease-in-out 2.5s both alternate infinite;
-	background-color:#ffb9b9;
+	animation:move-left-right1 7s ease-in-out 2.5s both alternate infinite , colorPulse 10s alternate infinite;
 
 }
 
 .c6{
-	animation:move-left-right 2s ease-in-out 3s both reverse infinite;
-	background-color:#ff7400;
+	animation:move-left-right 2s ease-in-out 3s both reverse infinite, colorPulse1 10s alternate infinite;
 }
 
 .c7{
-	animation:move-left-right1 3s ease-in-out 3.5s both alternate-reverse infinite;
-	background-color:#05abf3;
+	animation:move-left-right1 3s ease-in-out 3.5s both alternate-reverse infinite, colorPulse 10s alternate infinite;
 }
 
 .c8{
-	animation:move-left-right 2s ease-in-out 4s both alternate-reverse infinite;
-	background-color:#00f81e;
+	animation:move-left-right 2s ease-in-out 4s both alternate-reverse infinite, colorPulse1 10s alternate infinite;
 }
 
 .c9{
-	animation:move-left-right1 4s ease-in-out 4.5s both alternate-reverse infinite;
-	background-color:#efff00;
+	animation:move-left-right1 4s ease-in-out 4.5s both alternate-reverse infinite, colorPulse 10s reverse infinite;
 }
 .c10{
-	animation:move-left-right 1s ease-in-out 5s both reverse infinite;
-	background-color:#f8009c;
+	animation:move-left-right 1s ease-in-out 5s both reverse infinite, colorPulse1 10s reverse infinite;
 }
 
 .c11{
-	animation:move-left-right1 7s ease-in-out 5.5s both reverse infinite;
-	background-color:#ff0700;
+	animation:move-left-right1 7s ease-in-out 5.5s both reverse infinite, colorPulse 10s alternate infinite;
 }
 
 .c12{
-	animation:move-left-right 2s ease-in-out 6s both reverse infinite;
-	background-color:#0b52f4;
+	animation:move-left-right 2s ease-in-out 6s both reverse infinite, colorPulse1 10s alternate infinite;
 }
 
 .c13{
-	animation:move-left-right2 4s ease-in-out 6s both alternate infinite;
-	background-color:#0b52f4;
+	animation:move-left-right2 4s ease-in-out 6s both alternate infinite, colorPulse 10s alternate-reverse infinite;
 }
 
 .c14{
-	animation:move-left-right2 3s ease-in-out 5s both alternate infinite;
-	background-color:#0b52f4;
+	animation:move-left-right2 3s ease-in-out 5s both alternate infinite, colorPulse1 10s alternate-reverse infinite;
 }
 
 .c15{
-	animation:move-left-right2 2s ease-in-out 4s both reverse infinite;
-	background-color:#0b52f4;
+	animation:move-left-right2 2s ease-in-out 4s both reverse infinite, colorPulse 10s alternate infinite;
 }
 
 .c16{
-	animation:move-left-right2 1s ease-in-out 3s both alternate infinite;
-	background-color:#0b52f4;
+	animation:move-left-right2 1s ease-in-out 3s both alternate infinite, colorPulse1 10s alternate infinite;
 }
 
 .c17{
-	animation:move-left-right2 2.5s ease-in-out 2s both reverse infinite;
-	background-color:#0b52f4;
+	animation:move-left-right2 2.5s ease-in-out 2s both reverse infinite, colorPulse 10s alternate infinite;
 }
 
 .c18{
-	animation:move-left-right2 3s ease-in-out 1s both reverse infinite;
-	background-color:#0b52f4;
+	animation:move-left-right2 3s ease-in-out 1s both reverse infinite, colorPulse1 10s alternate infinite;
 }
 
 @keyframes move-left-right{
-	0% {transform: translateX(0px) translateY(0px);}
+	0% {transform: translateX(0px) translateY(-200px);}
+	25% {transform: translateX(550px) translateY(150px);}
 	50% {transform: translateX(200px) translateY(450px);}
-	75% {transform: translateX(800px) translateY(-50px);}
+	60% {transform: translateX(800px) translateY(-50px);}
+	75% {transform: translateX(400px) translateY(20px);}
 	100% {transform: translateX(1200px) translateY(700px);}
 }
 
 @keyframes move-left-right1{
-	0% {transform: translateX(900px) translateY(0px);}
-	50% {transform: translateX(300px) translateY(300px);}
+	0% {transform: translateX(900px) translateY(-300px);}
+	25% {transform: translateX(174px) translateY(150px);}
+	50% {transform: translateX(300px) translateY(500px);}
 	75% {transform: translateX(600px) translateY(150px);}
 	100% {transform: translateX(1200px) translateY(500px);}
 }
 
 @keyframes move-left-right2{
 	0% {transform: translateX(-100px) translateY(400px);}
+	25% {transform: translateX(100px) translateY(350px);}
 	50% {transform: translateX(400px) translateY(250px);}
 	75% {transform: translateX(900px) translateY(50px);}
 	100% {transform: translateX(600px) translateY(500px);}
@@ -147,4 +137,16 @@ button{
       0% {background-color: #e4dcff;}
      50% {background-color: #3fb8a4;}
     100% {background-color: #a82248;}
+}
+
+@keyframes colorPulse1 {
+      0% {background-color: #4a12ff;}
+     50% {background-color: #4cff00;}
+    100% {background-color: #ffbf00;}
+}
+
+@keyframes changeColor {
+      0% {background-color: #bbd1d2;}
+     50% {background-color: #ffbf43;}
+    100% {background-color: #d2d2d2;}
 }
